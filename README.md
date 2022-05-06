@@ -1,6 +1,6 @@
 # SMAN
 
-Code for Joint Entity Relation-Extraction Task.
+Code for Joint Entity-Relation Extraction Task.
 
 Train model
 python main.py train --config configs/example_train.conf for conll04 dataset
