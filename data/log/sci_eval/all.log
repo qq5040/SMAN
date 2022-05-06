@@ -1,0 +1,65 @@
+2022-05-06 16:08:42,656 [MainThread  ] [INFO ]  Model name 'data/models/sci_Train_epoch_68' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming 'data/models/sci_Train_epoch_68' is a path or url to a directory containing tokenizer files.
+2022-05-06 16:08:42,656 [MainThread  ] [INFO ]  Didn't find file data/models/sci_Train_epoch_68/added_tokens.json. We won't load it.
+2022-05-06 16:08:42,656 [MainThread  ] [INFO ]  Didn't find file data/models/sci_Train_epoch_68/special_tokens_map.json. We won't load it.
+2022-05-06 16:08:42,656 [MainThread  ] [INFO ]  Didn't find file data/models/sci_Train_epoch_68/tokenizer_config.json. We won't load it.
+2022-05-06 16:08:42,656 [MainThread  ] [INFO ]  loading file data/models/sci_Train_epoch_68/vocab.txt
+2022-05-06 16:08:42,656 [MainThread  ] [INFO ]  loading file None
+2022-05-06 16:08:42,656 [MainThread  ] [INFO ]  loading file None
+2022-05-06 16:08:42,656 [MainThread  ] [INFO ]  loading file None
+2022-05-06 16:08:42,673 [MainThread  ] [INFO ]  Dataset: data/datasets/scierc/scierc_test.json
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Relation type count: 8
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Entity type count: 7
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Entities:
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  No Entity=0
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Task=1
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Method=2
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Material=3
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Other Scientific Term=4
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Metric=5
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Generic=6
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Relations:
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  No Relation=0
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Used-for=1
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Feature-of=2
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Hyponym-of=3
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Evaluate-for=4
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Part-of=5
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Compare=6
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Conjunction=7
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Dataset: test
+2022-05-06 16:08:43,300 [MainThread  ] [INFO ]  Document count: 551
+2022-05-06 16:08:43,301 [MainThread  ] [INFO ]  Relation count: 974
+2022-05-06 16:08:43,301 [MainThread  ] [INFO ]  Entity count: 1685
+2022-05-06 16:08:43,301 [MainThread  ] [INFO ]  Context size: 109
+2022-05-06 16:08:43,301 [MainThread  ] [INFO ]  loading configuration file data/models/sci_Train_epoch_68/config.json
+2022-05-06 16:08:43,301 [MainThread  ] [INFO ]  Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 31116
+}
+
+2022-05-06 16:08:43,301 [MainThread  ] [INFO ]  loading weights file data/models/sci_Train_epoch_68/pytorch_model.bin
+2022-05-06 16:08:45,488 [MainThread  ] [INFO ]  Weights from pretrained model not used in SMAN: ['rel_tr.QKV_encoder.0.F_CNN.weight', 'rel_tr.QKV_encoder.0.F_CNN.bias', 'rel_tr.QKV_encoder.0.B_CNN.weight', 'rel_tr.QKV_encoder.0.B_CNN.bias', 'rel_tr.QKV_encoder.1.F_CNN.weight', 'rel_tr.QKV_encoder.1.F_CNN.bias', 'rel_tr.QKV_encoder.1.B_CNN.weight', 'rel_tr.QKV_encoder.1.B_CNN.bias', 'rel_tr.QKV_encoder.2.F_CNN.weight', 'rel_tr.QKV_encoder.2.F_CNN.bias', 'rel_tr.QKV_encoder.2.B_CNN.weight', 'rel_tr.QKV_encoder.2.B_CNN.bias']
+2022-05-06 16:08:47,836 [MainThread  ] [INFO ]  Evaluate: test
+2022-05-06 16:10:07,781 [MainThread  ] [INFO ]  Evaluate_F1result: NER-micro:71.37 ;NER-macro:71.34
+2022-05-06 16:10:07,781 [MainThread  ] [INFO ]                     REL-micro:53.33 ;REL-macro:49.77
+2022-05-06 16:10:07,781 [MainThread  ] [INFO ]                     RELner-micro:40.00 ;RELner-macro:38.21
+2022-05-06 16:10:09,641 [MainThread  ] [INFO ]  Logged in: data/log/sci_eval/2022-05-06_16:08:41.799274

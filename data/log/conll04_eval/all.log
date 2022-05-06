@@ -1,0 +1,69 @@
+2022-05-06 16:02:57,499 [MainThread  ] [INFO ]  Model name 'data/models/conll04_Train_epoch_85' not found in model shortcut name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese, bert-base-german-cased, bert-large-uncased-whole-word-masking, bert-large-cased-whole-word-masking, bert-large-uncased-whole-word-masking-finetuned-squad, bert-large-cased-whole-word-masking-finetuned-squad, bert-base-cased-finetuned-mrpc, bert-base-german-dbmdz-cased, bert-base-german-dbmdz-uncased). Assuming 'data/models/conll04_Train_epoch_85' is a path or url to a directory containing tokenizer files.
+2022-05-06 16:02:57,500 [MainThread  ] [INFO ]  Didn't find file data/models/conll04_Train_epoch_85/added_tokens.json. We won't load it.
+2022-05-06 16:02:57,500 [MainThread  ] [INFO ]  Didn't find file data/models/conll04_Train_epoch_85/special_tokens_map.json. We won't load it.
+2022-05-06 16:02:57,500 [MainThread  ] [INFO ]  Didn't find file data/models/conll04_Train_epoch_85/tokenizer_config.json. We won't load it.
+2022-05-06 16:02:57,500 [MainThread  ] [INFO ]  loading file data/models/conll04_Train_epoch_85/vocab.txt
+2022-05-06 16:02:57,500 [MainThread  ] [INFO ]  loading file None
+2022-05-06 16:02:57,500 [MainThread  ] [INFO ]  loading file None
+2022-05-06 16:02:57,500 [MainThread  ] [INFO ]  loading file None
+2022-05-06 16:02:57,515 [MainThread  ] [INFO ]  Dataset: data/datasets/conll04/conll04_test.json
+2022-05-06 16:02:57,905 [MainThread  ] [INFO ]  Relation type count: 6
+2022-05-06 16:02:57,905 [MainThread  ] [INFO ]  Entity type count: 5
+2022-05-06 16:02:57,905 [MainThread  ] [INFO ]  Entities:
+2022-05-06 16:02:57,905 [MainThread  ] [INFO ]  No Entity=0
+2022-05-06 16:02:57,905 [MainThread  ] [INFO ]  Location=1
+2022-05-06 16:02:57,905 [MainThread  ] [INFO ]  Organization=2
+2022-05-06 16:02:57,905 [MainThread  ] [INFO ]  People=3
+2022-05-06 16:02:57,905 [MainThread  ] [INFO ]  Other=4
+2022-05-06 16:02:57,905 [MainThread  ] [INFO ]  Relations:
+2022-05-06 16:02:57,906 [MainThread  ] [INFO ]  No Relation=0
+2022-05-06 16:02:57,906 [MainThread  ] [INFO ]  Work for=1
+2022-05-06 16:02:57,906 [MainThread  ] [INFO ]  Kill=2
+2022-05-06 16:02:57,906 [MainThread  ] [INFO ]  Organization based in=3
+2022-05-06 16:02:57,906 [MainThread  ] [INFO ]  Live in=4
+2022-05-06 16:02:57,906 [MainThread  ] [INFO ]  Located in=5
+2022-05-06 16:02:57,906 [MainThread  ] [INFO ]  Dataset: test
+2022-05-06 16:02:57,906 [MainThread  ] [INFO ]  Document count: 288
+2022-05-06 16:02:57,906 [MainThread  ] [INFO ]  Relation count: 422
+2022-05-06 16:02:57,906 [MainThread  ] [INFO ]  Entity count: 1079
+2022-05-06 16:02:57,906 [MainThread  ] [INFO ]  Context size: 157
+2022-05-06 16:02:57,906 [MainThread  ] [INFO ]  loading configuration file data/models/conll04_Train_epoch_85/config.json
+2022-05-06 16:02:57,906 [MainThread  ] [INFO ]  Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 28996
+}
+
+2022-05-06 16:02:57,906 [MainThread  ] [INFO ]  loading weights file data/models/conll04_Train_epoch_85/pytorch_model.bin
+2022-05-06 16:03:00,023 [MainThread  ] [INFO ]  Weights from pretrained model not used in SMAN: ['rel_tr.QKV_encoder.0.F_CNN.weight', 'rel_tr.QKV_encoder.0.F_CNN.bias', 'rel_tr.QKV_encoder.0.B_CNN.weight', 'rel_tr.QKV_encoder.0.B_CNN.bias', 'rel_tr.QKV_encoder.1.F_CNN.weight', 'rel_tr.QKV_encoder.1.F_CNN.bias', 'rel_tr.QKV_encoder.1.B_CNN.weight', 'rel_tr.QKV_encoder.1.B_CNN.bias', 'rel_tr.QKV_encoder.2.F_CNN.weight', 'rel_tr.QKV_encoder.2.F_CNN.bias', 'rel_tr.QKV_encoder.2.B_CNN.weight', 'rel_tr.QKV_encoder.2.B_CNN.bias']
+2022-05-06 16:03:02,328 [MainThread  ] [INFO ]  Evaluate: test
+2022-05-06 16:03:56,812 [MainThread  ] [INFO ]  Evaluate_F1result: NER-micro:90.43 ;NER-macro:87.55
+2022-05-06 16:03:56,812 [MainThread  ] [INFO ]                     REL-micro:74.39 ;REL-macro:75.22
+2022-05-06 16:03:56,812 [MainThread  ] [INFO ]                     RELner-micro:74.39 ;RELner-macro:75.22
+2022-05-06 16:03:57,964 [MainThread  ] [INFO ]  Logged in: data/log/conll04_eval/2022-05-06_16:02:56.657363
